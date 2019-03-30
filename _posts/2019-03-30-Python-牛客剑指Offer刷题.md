@@ -4,7 +4,7 @@ title:      刷题 牛客剑指Offer
 subtitle:   刷题 牛客剑指Offer刷题Python
 date:       2019-3-30
 author:     Hugo Yu
-header-img: img/post-bg-hacker.jpg
+header-img: 
 catalog: true
 tags:
     - Python
