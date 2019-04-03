@@ -23,3 +23,14 @@ tags:
     
 ### ActorRef
 一个参与者的不可变的、可序列化的句柄，它可能驻留在本地主机上，也可能不驻留在同一个参与者系统中。ActorRef可以从ActorRefFactory中获得，ActorRefFactory是一个由ActorSystem和ActorContext实现的接口。这意味着可以在actor系统的顶层创建参与者，或者作为现有参与者的子元素创建参与者，但是只能从该参与者内部创建。通过消息传递，可以在参与者之间自由共享actorref。相反地传递消息是它们的唯一目的。
+
+# 错误记录
+### 1. 打包sbt assembly报OOM
+原因：JVM垃圾回收内存不够用
+解决方案：Run -> Edit Configurations -> Temlates -> Application -> VM options 
+    内容设置为：
+    ```
+    -server
+    -XX:PermSize=4096M
+    -XX:MaxPermSize=4096m
+    ```
