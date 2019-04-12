@@ -1,8 +1,7 @@
-
 ---
 layout:     post
 title:      Linux 安装postgresql
-subtitle:   centos7.5 安装postgresql9.6.8及uuid-ossp
+subtitle:   Centos7.5 安装postgresql9.6.8及uuid-ossp
 date:       2019-04-12
 author:     Hugo Yu
 header-img: img/linux.jpg
